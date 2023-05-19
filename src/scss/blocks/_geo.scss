@@ -1,0 +1,72 @@
+.geo {
+    position: relative;
+    overflow: hidden;
+    margin-top: -126px;
+    margin-bottom: 60px;
+    padding: 274px 0 537px;
+    background: #1a1a1a;
+    clip-path: ellipse(69% 55% at 50% 45%);
+
+    @media (max-width: 1200px) {
+        padding-top: 194px;
+    }
+
+    @media (max-width: 992px) {
+        padding-bottom: 347px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 164px;
+        padding-bottom: 297px;
+    }
+
+    @media(max-width: 576px){
+        padding-bottom: 207px;
+    }
+
+    &__map {
+        position: absolute;
+        width: 87.2%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-52.7%, 0);
+        pointer-events: none;
+        text-align: center;
+
+        @media (max-width: 1200px) {
+            width: 120%;
+        }
+
+        @media (max-width: 576px) {
+            width: 144%;
+            transform: translate(-51.7%, 0);
+        }
+    }
+
+    &__body {
+        position: relative;
+        z-index: 2;
+
+        & p {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 670px;
+            text-align: center;
+            font-weight: 450;
+            font-size: 28px;
+            line-height: 130%;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 120%;
+        margin-bottom: 25px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 32px !important;
+        }
+    }
+}

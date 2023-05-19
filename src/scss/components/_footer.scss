@@ -1,0 +1,107 @@
+.site-footer {
+    padding: 26px 0 40px;
+    background: #1a1a1a;
+
+    &__top {
+        padding-bottom: 23px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+
+        @media (max-width: 992px) {
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            flex-direction: column;
+            align-items: start;
+            gap: 24px;
+        }
+    }
+
+    &__logo {
+    }
+
+    &__menu {
+    }
+
+    &__bottom {
+        margin-bottom: 31px;
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 42px;
+
+        @media (max-width: 1200px) {
+            gap: 24px;
+        }
+
+        @media (max-width: 992px) {
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+    }
+
+    &__addresses {
+        max-width: 376px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+
+        @media (max-width: 992px) {
+            max-width: unset;
+            width: 100%;
+            gap: 8px;
+        }
+    }
+
+    &__address {
+        font-weight: 450;
+        font-size: 18px;
+        line-height: 120%;
+        font-style: normal;
+        color: #ffffff;
+
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: start;
+        column-gap: 36px;
+        row-gap: 8px;
+        flex-wrap: wrap;
+
+        @media (max-width: 992px) {
+            column-gap: 24px;
+        }
+    }
+
+    &__socials {
+        @media (min-width: 576px) {
+            margin-top: -3px;
+            margin-left: auto;
+        }
+    }
+
+    &__main-partner {
+        display: block;
+        border-radius: 14px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out 0s;
+
+        @media(max-width: 768px){
+            border-radius: 8px;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

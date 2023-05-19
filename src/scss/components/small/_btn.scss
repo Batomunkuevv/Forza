@@ -1,0 +1,42 @@
+.btn {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #1a1a1a;
+    border-radius: 100px;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 120%;
+    color: #ffffff;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out 0s;
+
+    @media(max-width: 576px){
+        font-size: 16px;
+    }
+
+    &:hover {
+        color: #212529;
+        border-color: #1a1a1a;
+        background: #fff;
+    }
+
+    &--white {
+        color: #212529;
+        background: #fff;
+
+        &:hover {
+            background: #1a1a1a;
+            color: #fff;
+        }
+    }
+
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+    }
+}

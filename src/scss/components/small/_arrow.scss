@@ -1,0 +1,29 @@
+.arrow {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+
+    @media(max-width: 768px){
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover{
+        border-color: $color__main;
+    }
+
+    &--prev {
+        left: -11px;
+        transform: translate(-100%, -50%) rotate(-135deg);
+    }
+
+    &--next {
+        right: -11px;
+        transform: translate(100%, -50%) rotate(45deg);
+    }
+}

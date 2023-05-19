@@ -1,0 +1,191 @@
+.services {
+    margin-top: -349px;
+    background: #1a1a1a;
+
+    & .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__calculation {
+        position: relative;
+        z-index: 2;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        & .calculation__header {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 50px;
+        padding-top: 47px;
+        background: #ffffff;
+        border-radius: 0 0 16px 16px;
+        overflow: hidden;
+
+        @media(max-width: 1200px){
+            padding: 32px;
+        }
+
+        @media(max-width: 768px){
+            padding: 24px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            background: url("../images/blocks/services/globe.svg") center/cover no-repeat;
+            width: 380px;
+            height: 500px;
+
+            @media(max-width: 992px){
+                display: none;
+            }
+        }
+
+        & > p {
+            font-weight: 450;
+            font-size: 24px;
+            line-height: 130%;
+            text-align: center;
+            padding: 0 15px;
+
+            @media(max-width: 992px){
+                font-size: 20px;
+                padding: 0;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 35px;
+        font-size: 38px;
+        line-height: 120%;
+        color: #212529;
+
+        @media(max-width: 992px){
+            margin-bottom: 32px !important;
+        }
+
+        @media(max-width: 768px){
+            font-size: 30px !important;
+        }
+    }
+
+    &__body {
+        margin-top: 60px;
+        display: flex;
+        align-items: start;
+        gap: 24px;
+        position: relative;
+        z-index: 1;
+
+        @media(max-width: 1200px){
+            margin-top: 32px;
+        }
+
+        @media(max-width: 992px){
+            flex-direction: column;
+        }
+    }
+
+    &__tabs {
+        width: 340px;
+
+        @media(max-width: 992px){
+            width: 100%;
+        }
+    }
+
+    &__tabs-body {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10.3px;
+
+        @media(max-width: 992px){
+            padding-right: 16px;
+            margin-right: -32px;
+            flex-direction: row;
+            overflow: auto;
+        }
+    }
+
+    &__tab {
+        text-align: left;
+        padding: 16px 21px;
+        border: 1px solid #ededed;
+        border-radius: 12px;
+        transition: all 0.3s ease-in-out 0s;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 100%;
+        text-transform: uppercase;
+        background: unset;
+        color: #212529;
+
+        @media(max-width: 992px){
+            white-space: nowrap;
+        }
+
+        @media(max-width: 576px){
+            font-size: 14px;
+        }
+
+        @media(max-width: 400px){
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 12px;
+        }
+
+        &:hover {
+            border-color: #212529;
+        }
+
+        &.is-active {
+            pointer-events: none;
+            background: $color__main;
+            color: #fff;
+        }
+    }
+
+    &__btn.btn {
+        padding: 14px 21px;
+        justify-content: start;
+        background: $color__main;
+        border-radius: 12px;
+        color: #212529;
+
+        @media(max-width: 992px){
+            width: fit-content;
+        }
+    }
+
+    &__tabcontents {
+    }
+
+    &__tabcontent {
+        max-width: 725px;
+
+        & > p {
+            line-height: 117%;
+
+            & + p {
+                margin-top: 23px;
+
+                @media(max-width: 768px){
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        &:not(.is-active) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@use "sass:math";
+
+//*<Modules>=======================================================================================================
+
+@import "base/fonts.scss";
+@import "base/function";
+@import "base/animation";
+@import "base/variables";
+@import "base/nullstyle";
+@import "base/common";
+
+//*</Modules>=====================================================================================================
+
+//*<Header and footer>=================================================================================================
+
+@import "components/header";
+@import "components/footer";
+
+//*</Header and footer>=================================================================================================
+
+//*<Components>================================================================================================
+
+@import "components/big/calculation";
+@import "components/big/calculation";
+@import "components/big/form";
+@import "components/big/review";
+
+// Small
+
+@import "components/small/arrow";
+@import "components/small/input";
+@import "components/small/btn";
+@import "components/small/menu";
+@import "components/small/socials";
+@import "components/small/contact-link";
+
+//*</Components>=================================================================================================
+
+//*<Main grid>==================================================================================================
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &--no-padding{
+        padding: 0;
+    }
+
+    @media(max-width: 1240px){
+        max-width: 1170px;
+        padding: 0 15px;
+    }
+
+    @media (max-width: 1200px) {
+        max-width: 960px;
+    }
+    @media (max-width: 992px) {
+        max-width: 720px;
+    }
+    @media (max-width: 768px) {
+        max-width: 540px;
+    }
+    @media (max-width: 576px) {
+        max-width: none;
+        padding: 0 16px;
+    }
+}
+
+.page{
+    flex: 1 1 auto;
+}
+
+
+//*</Main grid>=================================================================================================
+
+//TODO<Blocks>=================================================================================================
+
+@import "blocks/hero"; 
+@import "blocks/services"; 
+@import "blocks/geo"; 
+@import "blocks/advantages"; 
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/partners";
+@import "blocks/contacts";
+
+//TODO</Blocks>=================================================================================================
